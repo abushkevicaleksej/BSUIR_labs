@@ -1,0 +1,269 @@
+<?xml version="1.0" ?><root>
+<patients>
+    <patient>
+        <name>John Doe</name>
+        <address>Grondo, Belarus</address>
+        <birthdate>4/1/2004</birthdate>
+        <appdate>4/1/2007</appdate>
+        <docname>Walter White</docname>
+        <concl>Amnesia</concl>
+    </patient>
+    <patient id="e0cadd67-6601-468c-8d27-39aaf5a2358b" name="Nikita Petrov" address="Moscow, Russia" birthdate="03/15/1990" appdate="10/05/2023" docname="Elena Ivanova" concl="Concussion"/>
+<patient id="51191040-0e43-4209-a6e4-532bc67a3312" name="Sofia Kuznetsova" address="Saint Petersburg, Russia" birthdate="07/22/1985" appdate="09/18/2023" docname="Dmitry Smirnov" concl="Gastritis"/>
+<patient id="347c47b5-10f0-4c59-97ac-fa8b1ddab4ba" name="Ivan Fedorov" address="Novosibirsk, Russia" birthdate="11/07/1975" appdate="08/30/2023" docname="Olga Volkova" concl="Bronchitis"/>
+<patient id="cfb4bbab-a132-4675-93ac-b95fd3144396" name="Elena Sokolova" address="Yekaterinburg, Russia" birthdate="02/14/1982" appdate="07/12/2023" docname="Sergei Petrov" concl="Anemia"/>
+<patient id="d5fef366-1b22-427b-a374-bd9fe2bd9eb0" name="Dmitry Ivanov" address="Kazan, Russia" birthdate="09/30/1978" appdate="06/25/2023" docname="Maria Smirnova" concl="Arthritis"/>
+<patient id="80070553-e56f-4264-88af-f770c60cffc8" name="Anna Sidorova" address="Chelyabinsk, Russia" birthdate="05/19/1987" appdate="05/10/2023" docname="Vladimir Sokolov" concl="Sinusitis"/>
+
+<patient id="8abdc205-98d1-4b6e-aa1c-23fd70c5f86b" name="Ekaterina Smirnova" address="Samara, Russia" birthdate="08/08/1995" appdate="03/26/2023" docname="Nikolay Popov" concl="Pneumonia"/>
+<patient id="529f1470-87df-4bc4-84bb-f715abeff56e" name="Andrei Popov" address="Krasnoyarsk, Russia" birthdate="06/17/1992" appdate="02/19/2023" docname="Ekaterina Petrova" concl="Fibromyalgia"/>
+
+
+<patient id="47c780d4-bfe0-4f85-8bc5-2e2b153b6a2e" name="Olga Kozlova" address="Volgograd, Russia" birthdate="01/25/1981" appdate="11/27/2022" docname="Pavel Smirnov" concl="Glaucoma"/>
+<patient id="3e5d7781-1700-447b-8452-75b5cde7b894" name="Mikhail Ivanov" address="Voronezh, Russia" birthdate="07/10/1976" appdate="10/21/2022" docname="Irina Petrova" concl="Osteoporosis"/>
+<patient id="1d73c396-0d4d-4975-ba59-2487c23612b3" name="Tatiana Petrova" address="Krasnodar, Russia" birthdate="03/04/1990" appdate="09/15/2022" docname="Alexei Sidorov" concl="Dermatitis"/>
+<patient id="e563e803-5e15-4710-9ecb-982a4acdbb13" name="Daria Kuznetsova" address="Saratov, Russia" birthdate="11/29/1986" appdate="07/29/2022" docname="Sergei Popov" concl="Psoriasis"/>
+<patient id="9dd47b4f-7a46-4d3b-81f1-ba78098e71f8" name="Igor Smirnov" address="Tyumen, Russia" birthdate="08/18/1983" appdate="06/08/2022" docname="Ekaterina Kuznetsova" concl="Anxiety"/>
+<patient id="f88d447b-57e1-4090-bcbb-44aa1bc576c5" name="Svetlana Ivanova" address="Irkutsk, Russia" birthdate="05/02/1978" appdate="03/30/2022" docname="Andrei Sidorov" concl="Depression"/>
+<patient id="f7c9888b-5f4b-4c49-a1f8-798b13272664" name="Anton Kozlov" address="Ulyanovsk, Russia" birthdate="09/12/1984" appdate="01/21/2022" docname="Daria Popova" concl="Insomnia"/>
+<patient id="f2a5aa1d-60df-4c5e-bdff-0a1013d47719" name="Natalia Petrova" address="Barnaul, Russia" birthdate="02/07/1989" appdate="11/14/2021" docname="Alexei Smirnov" concl="Vertigo"/>
+<patient id="5fb267f1-f755-4874-83d5-1a4a68a8a7f7" name="Dmitry Sidorov" address="Orenburg, Russia" birthdate="06/20/1987" appdate="09/05/2021" docname="Maria Kozlova" concl="Tinnitus"/>
+<patient id="64172e9e-d4c4-4a8f-abe2-8318b96e10e1" name="Nina Ivanova" address="Magnitogorsk, Russia" birthdate="10/09/1985" appdate="06/26/2021" docname="Vladimir Ivanov" concl="Hypertension"/>
+<patient id="68c15c3f-8675-4f5a-aa67-535b7cf58e6a" name="Sergei Popov" address="Tomsk, Russia" birthdate="04/15/1980" appdate="04/16/2021" docname="Ekaterina Ivanova" concl="Hypotension"/>
+<patient id="526e79df-4b81-474e-8b8b-ba6934ad3b3c" name="Yulia Kozlova" address="Kemerovo, Russia" birthdate="12/28/1983" appdate="01/08/2021" docname="Sergei Sidorov" concl="Hyperthyroidism"/>
+<patient id="a9735bae-7f5b-46f8-ae3e-4ac3a27a8aa2" name="Andrei Ivanov" address="Novokuznetsk, Russia" birthdate="08/03/1975" appdate="11/29/2020" docname="Natalia Smirnova" concl="Hypothyroidism"/>
+<patient id="37c9a5e5-aecc-4f90-ae1d-55ef298a1224" name="Svetlana Sidorova" address="Tolyatti, Russia" birthdate="03/17/1982" appdate="09/22/2020" docname="Ivan Kuznetsov" concl="Diabetes"/>
+<patient id="46f1c1a7-41b5-44f0-bd27-7f8933b72721" name="Vladimir Smirnov" address="Kursk, Russia" birthdate="11/04/1979" appdate="07/15/2020" docname="Nina Kuznetsova" concl="Asthma"/>
+<patient id="a9f5412d-4bc9-4c26-805b-9c6a7c02b39f" name="Elena Ivanova" address="Ivanovo, Russia" birthdate="07/01/1988" appdate="05/08/2020" docname="Dmitry Petrov" concl="Allergy"/>
+<patient id="90e0aa7a-750d-4b3d-85a1-5a08040e2ac6" name="Nikolay Kuznetsov" address="Belgorod, Russia" birthdate="12/13/1981" appdate="03/01/2020" docname="Ekaterina Smirnova" concl="Gastroenteritis"/>
+<patient id="16cd1b80-d017-4f2a-bbd5-011ed18002f8" name="Maria Popova" address="Volzhsky, Russia" birthdate="08/29/1984" appdate="12/24/2019" docname="Pavel Ivanov" concl="Conjunctivitis"/>
+<patient id="6c06dbfd-dab9-4bc8-94e1-0fe417af54dc" name="Alexei Ivanov" address="Taganrog, Russia" birthdate="05/16/1989" appdate="10/17/2019" docname="Nina Smirnova" concl="Migraine"/>
+<patient id="375bfe50-8203-4ff6-a099-214497f1e456" name="Daria Kuznetsova" address="Surgut, Russia" birthdate="01/11/1986" appdate="08/09/2019" docname="Ivan Petrov" concl="Ulcer"/>
+<patient id="72749bc5-d37f-4bfb-8268-df9e4727c6c6" name="Andrei Smirnov" address="Chita, Russia" birthdate="06/27/1983" appdate="06/02/2019" docname="Tatiana Kuznetsova" concl="Colitis"/>
+<patient id="4ac4f1f3-3e24-4d9d-b42a-9b226bc874cb" name="Ekaterina Sidorova" address="Angarsk, Russia" birthdate="11/20/1980" appdate="03/27/2019" docname="Sergei Ivanov" concl="Cystitis"/>
+<patient id="21c6cf4f-4cc5-41d6-90a4-27a9d2cc79a8" name="Ivan Smirnov" address="Balashikha, Russia" birthdate="09/05/1987" appdate="01/20/2019" docname="Maria Petrova" concl="Pancreatitis"/>
+<patient id="a7037f8d-2eb5-4f13-96fd-369660c2e684" name="Sergei Petrov" address="Blagoveshchensk, Russia" birthdate="04/02/1979" appdate="10/15/2018" docname="Ekaterina Ivanova" concl="Appendicitis"/>
+<patient id="58245fbf-fd2e-46d3-91ad-7b7427d5f1de" name="Tatiana Kuznetsova" address="Biysk, Russia" birthdate="12/25/1977" appdate="08/08/2018" docname="Nikita Smirnov" concl="Tonsillitis"/>
+<patient id="d4a856c4-8f14-4f0e-94a0-14f2699a4015" name="Nikita Popov" address="Velikiye Luki, Russia" birthdate="07/08/1976" appdate="05/01/2018" docname="Anna Kuznetsova" concl="Glaucoma"/>
+<patient id="cdd4d19f-739e-4d79-b35e-15e45e2ac166" name="Nina Smirnova" address="Vladikavkaz, Russia" birthdate="02/23/1983" appdate="02/22/2018" docname="Sergei Ivanov" concl="Schizophrenia"/>
+<patient id="d5f3f7a2-3cf7-4a49-9a89-228d9e1c0800" name="Anna Popova" address="Nakhodka, Russia" birthdate="10/06/1980" appdate="11/15/2017" docname="Nikolay Sidorov" concl="Bipolar disorder"/>
+<patient id="e382e7b7-4e1e-4d43-886e-ec0b5b7fd1c5" name="Ivan Sidorov" address="Norilsk, Russia" birthdate="05/31/1977" appdate="08/09/2017" docname="Elena Petrova" concl="Alzheimer's disease"/>
+<patient id="9f149b22-23c7-4b36-bd24-2c2fe1cf6b5d" name="Ekaterina Smirnova" address="Novorossiysk, Russia" birthdate="01/17/1974" appdate="04/02/2017" docname="Vladimir Kuznetsov" concl="Parkinson's disease"/>
+<patient id="afaef7b4-b9a4-4e56-8708-17a654b9167e" name="Sergei Kuznetsov" address="Engels, Russia" birthdate="08/22/1971" appdate="12/26/2016" docname="Maria Ivanova" concl="Multiple sclerosis"/>
+<patient id="4e672304-9fd8-4f12-88c7-cb6b746c33d6" name="Olga Petrova" address="Shakhty, Russia" birthdate="04/19/1968" appdate="09/18/2016" docname="Dmitry Kuznetsov" concl="Epilepsy"/>
+<patient id="683c42d2-6c32-4ff2-9a4a-7c9b8e62b61a" name="Vladimir Ivanov" address="Miass, Russia" birthdate="12/14/1965" appdate="07/11/2016" docname="Olga Smirnova" concl="Schistosomiasis"/>
+<patient id="a1b796bb-456f-4a69-bfa6-5f2dfc707a57" name="Natalia Ivanova" address="Kostroma, Russia" birthdate="09/01/1962" appdate="04/04/2016" docname="Andrei Petrov" concl="Dengue fever"/>
+<patient id="6f4b8a9d-3bfc-4a3a-b0c1-d08414a5c80a" name="Pavel Kuznetsov" address="Volsk, Russia" birthdate="05/28/1959" appdate="12/28/2015" docname="Nina Petrova" concl="Chikungunya"/>
+<patient id="3b1a40c5-30cc-4f5b-8bc2-461b99128921" name="Tatiana Smirnova" address="Votkinsk, Russia" birthdate="02/13/1956" appdate="09/20/2015" docname="Sergei Kuznetsov" concl="Ebola"/>
+<patient id="3e53ff16-ba32-4344-84c8-545aa4acdc4c" name="Nikolay Petrov" address="Yaroslavl, Russia" birthdate="10/17/1953" appdate="06/13/2015" docname="Maria Ivanova" concl="HIV/AIDS"/>
+<patient id="df5ffcd1-fbd9-42de-b2a9-00c8bdfba5ef" name="Maria Kuznetsova" address="Ussuriysk, Russia" birthdate="07/10/1950" appdate="03/08/2015" docname="Dmitry Petrov" concl="COVID-19"/>
+<patient id="6442235b-b4de-4a01-b70a-be9447611d1a" name="sdf" address="sdfsdf" birthdate="05/07/2024" appdate="05/07/2024" docname="Olga Volkova" concl="werwrwer"/></patients>
+
+
+<doctors>
+    <doctor>
+        <doctorname>Elena Ivanova</doctorname>
+        <specialization>Cardiologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Dmitry Smirnov</doctorname>
+        <specialization>Neurologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Olga Volkova</doctorname>
+        <specialization>Dermatologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Sergei Petrov</doctorname>
+        <specialization>Oncologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Maria Smirnova</doctorname>
+        <specialization>Gastroenterologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Vladimir Sokolov</doctorname>
+        <specialization>Psychiatrist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Tatiana Ivanova</doctorname>
+        <specialization>Pediatrician</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nikolay Popov</doctorname>
+        <specialization>Orthopedist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Andrei Ivanov</doctorname>
+        <specialization>Ophthalmologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Svetlana Kuznetsova</doctorname>
+        <specialization>Urologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Pavel Smirnov</doctorname>
+        <specialization>Otolaryngologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Irina Petrova</doctorname>
+        <specialization>Rheumatologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Alexei Sidorov</doctorname>
+        <specialization>Endocrinologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Sergei Popov</doctorname>
+        <specialization>Hematologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Ekaterina Kuznetsova</doctorname>
+        <specialization>Pulmonologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Ekaterina Petrova</doctorname>
+        <specialization>Neonatologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nina Kuznetsova</doctorname>
+        <specialization>Nephrologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Sergei Ivanov</doctorname>
+        <specialization>Podiatrist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Maria Kozlova</doctorname>
+        <specialization>Immunologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Dmitry Kuznetsov</doctorname>
+        <specialization>Geriatrician</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Olga Smirnova</doctorname>
+        <specialization>Obstetrician</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Dmitry Petrov</doctorname>
+        <specialization>Geneticist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Andrei Petrov</doctorname>
+        <specialization>Intensivist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nina Petrova</doctorname>
+        <specialization>Pathologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Vladimir Kuznetsov</doctorname>
+        <specialization>Surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Alexei Smirnov</doctorname>
+        <specialization>Cardiac electrophysiologist</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nikita Smirnov</doctorname>
+        <specialization>Vascular surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Sergei Kuznetsov</doctorname>
+        <specialization>Plastic surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Ekaterina Smirnova</doctorname>
+        <specialization>Colorectal surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Natalia Smirnova</doctorname>
+        <specialization>Orthopedic surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Sergei Petrov</doctorname>
+        <specialization>Neurosurgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Andrei Ivanov</doctorname>
+        <specialization>Thoracic surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nina Ivanova</doctorname>
+        <specialization>Maxillofacial surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nikolay Sidorov</doctorname>
+        <specialization>Transplant surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Svetlana Kuznetsova</doctorname>
+        <specialization>Pediatric surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Ekaterina Ivanova</doctorname>
+        <specialization>Plastic surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Daria Popova</doctorname>
+        <specialization>Urologic surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Maria Petrova</doctorname>
+        <specialization>Vascular surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Sergei Ivanov</doctorname>
+        <specialization>Reconstructive surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Elena Petrova</doctorname>
+        <specialization>Orthopedic surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Vladimir Ivanov</doctorname>
+        <specialization>Oncologic surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nikita Petrov</doctorname>
+        <specialization>Pediatric orthopedic surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Andrei Smirnov</doctorname>
+        <specialization>Hand surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Andrei Kuznetsov</doctorname>
+        <specialization>Pediatric neurosurgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Elena Kuznetsova</doctorname>
+        <specialization>Spinal surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Vladimir Smirnov</doctorname>
+        <specialization>Neuromuscular surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Maria Ivanova</doctorname>
+        <specialization>Craniofacial surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Alexander Ivanov</doctorname>
+        <specialization>Reconstructive microsurgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nikita Ivanov</doctorname>
+        <specialization>Bariatric surgeon</specialization>
+    </doctor>
+    <doctor>
+        <doctorname>Nikolay Ivanov</doctorname>
+        <specialization>Robotic surgeon</specialization>
+    </doctor>
+</doctors>
+
+
+
+
+</root>

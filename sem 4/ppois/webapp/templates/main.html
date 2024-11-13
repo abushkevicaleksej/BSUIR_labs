@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главное меню
+{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+
+    <div class="button-container">
+        <a href="{{ url_for('company_details', company_name=company.get_name()) }}" class="btn btn-primary btn-spacing btn-width">
+            Посмотреть меню редактирования компании
+        </a>
+    </div>
+
+        <div class="container">
+    <div class="button-container">
+        <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#addClientModal">
+            Стать клиентом
+        </button>
+    </div>
+    <div class="modal fade" id="addClientModal" tabindex="-1" aria-labelledby="addClientModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addClientModalLabel">Добавить клиента</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addClientForm" action="{{ url_for('add_client') }}" method="post">
+                        <input type="hidden" id="companyName" name="company_name" value="{{ company.get_name() }}">
+                        <div class="form-group">
+                            <label for="clientType">Тип клиента</label>
+                            <select class="form-control" id="clientType" name="client_type" required>
+                                <option value="заказчик">Заказчик</option>
+                                <option value="инвестор">Инвестор</option>
+                            </select>
+                        </div>
+                        <div id="customerFields" style="display: none;">
+                            <div class="form-group">
+                                <label for="customerName">Имя</label>
+                                <input type="text" class="form-control" id="customerName" name="customer_name">
+                            </div>
+                        </div>
+                        <div id="investorFields" style="display: none;">
+                            {% if company.get_projects() %}
+                                <div class="form-group">
+                                    <label for="investorName">Имя</label>
+                                    <input type="text" class="form-control" id="investorName" name="investor_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="investedAmount">Сумма инвестиций</label>
+                                    <input type="text" class="form-control" id="investedAmount" name="invested_amount">
+                                </div>
+                                <div class="form-group">
+                                    <label for="projectChoice">Проект для инвестирования</label>
+                                    <select class="form-control" id="projectChoice" name="project_choice">
+                                        {% for project in company.get_projects() %}
+                                            <option value="{{ loop.index }}">{{ project.get_proj_name() }} (Бюджет: {{ project.get_budget() }})</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            {% else %}
+                                <div class="alert alert-warning" role="alert">
+                                    Нет доступных проектов для инвестирования.
+                                </div>
+                            {% endif %}
+                        </div>
+                        <button type="submit" class="btn btn-primary">Добавить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="button-container">
+        <button type="button" class="btn btn-danger btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#deleteCompanyModal">
+            Удалить компанию
+        </button>
+    <div class="modal fade" id="deleteCompanyModal" tabindex="-1" aria-labelledby="deleteCompanyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteCompanyModalLabel">Удаление компании</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Вы уверены, что хотите удалить компанию "{{ company.get_name() }}"?</p>
+            </div>
+            <div class="modal-footer">
+                <form action="{{ url_for('delete_company') }}" method="post">
+                    <input type="hidden" name="company_name" value="{{ company.get_name() }}">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-danger">Удалить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

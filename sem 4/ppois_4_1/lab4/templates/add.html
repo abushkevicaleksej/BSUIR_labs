@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% block head %}
+{% endblock %}
+{% block body %}
+	<form method="POST" id="name-form">
+	<p>Input the name: </p>
+		<input type="text" name="client-name" placeholder="John" form="name-form" pattern=[A-Z][A-Za-z]* title="Enter the client name that starts with a capitabl letter" required autocomplete="off">
+		<button type="submit"><b>Add client</b></button>
+	</form>
+	{% if error %}
+<p style="color: red;">{{ error }}</p>
+	{% endif %}
+	{% if success %}
+<p style="color: green;">{{ success }}</p>
+	{% endif %}
+{% endblock %}

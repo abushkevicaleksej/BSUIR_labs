@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Управление проектом
+{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+<h1>Проект: {{ project.get_proj_name() }}</h1>
+<p>Бюджет: {{ project.get_budget() }}</p>
+
+    <div class="button-container">
+        <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#addEmpToProjModal">
+            Добавить сотрудника на проект
+        </button>
+    </div>
+    <div class="modal fade" id="addEmpToProjModal" tabindex="-1" aria-labelledby="addEmpToProjModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addEmpToProjModalLabel">Выберите сотрудника</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="{{ url_for('add_employee_to_project', company_name=company.get_name(), project_name=project.get_proj_name()) }}" method="post">
+    <div class="mb-3">
+        <label for="empName" class="form-label">Выберите сотрудника:</label>
+        <select id="empName" name="employee_name" class="form-select" required>
+            {% for employee in company.get_employees() %}
+                <option value="{{ employee.get_name() }}">{{ employee.get_name() }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Добавить</button>
+</form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="button-container">
+        <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#assignEmpToProjModal">
+            Назначить сотрудника ответственным за проект
+        </button>
+    </div>
+    <div class="modal fade" id="assignEmpToProjModal" tabindex="-1" aria-labelledby="assignEmpToProjModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="assignEmpToProjModalLabel">Выберите сотрудника</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="{{ url_for('assign_project_manager', company_name=company.get_name(), project_name=project.get_proj_name()) }}" method="post">
+    <div class="mb-3">
+        <label for="employee_name" class="form-label">Выберите сотрудника:</label>
+        <select id="employee_name" name="employee_name" class="form-select" required>
+            {% for employee in company.get_employees() %}
+                <option value="{{ employee.get_name() }}">{{ employee.get_name() }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Назначить ответственным</button>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="button-container">
+        <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#showProjInfoModal">
+            О проекте
+        </button>
+    </div>
+
+    <div class="modal fade" id="showProjInfoModal" tabindex="-1" aria-labelledby="showProjInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="showProjInfoModalLabel">Информация о проекте</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Проект:</h6>
+        <ul>
+            <li>{{ project.get_info() }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="button-container">
+    <button type="button" class="btn btn-warning btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#testProjectModal">
+        Тестировать проект
+    </button>
+</div>
+
+<div class="modal fade" id="testProjectModal" tabindex="-1" aria-labelledby="testProjectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="testProjectModalLabel">Тестирование проекта</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Вы уверены, что хотите запустить тестирование проекта?</p>
+            </div>
+            <div class="modal-footer">
+                <form action="{{ url_for('test_project', company_name=company.get_name(), project_name=project.get_proj_name()) }}" method="post">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-warning">Тестировать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="button-container">
+    <button type="button" class="btn btn-danger btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#deleteProjectModal">
+        Удалить проект
+    </button>
+</div>
+
+<div class="modal fade" id="deleteProjectModal" tabindex="-1" aria-labelledby="deleteProjectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteProjectModalLabel">Удаление проекта</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Вы уверены, что хотите удалить проект "{{ project.get_proj_name() }}"?</p>
+            </div>
+            <div class="modal-footer">
+                <form action="{{ url_for('remove_project', company_name=company.get_name(), project_name=project.get_proj_name()) }}" method="post">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-danger">Удалить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="button-container">
+    <button type="button" class="btn btn-danger btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#removeEmpFromProjModal">
+        Снять сотрудника с проекта
+    </button>
+</div>
+
+<div class="modal fade" id="removeEmpFromProjModal" tabindex="-1" aria-labelledby="removeEmpFromProjModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="removeEmpFromProjModalLabel">Снятие сотрудника с проекта</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="{{ url_for('remove_employee_from_project', company_name=company.get_name(), project_name=project.get_proj_name()) }}" method="post">
+                    <div class="mb-3">
+                        <label for="empName" class="form-label">Выберите сотрудника:</label>
+                        <select id="empName" name="employee_name" class="form-select" required>
+                            {% for employee in project.get_employees() %}
+                                <option value="{{ employee.get_name() }}">{{ employee.get_name() }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Снять с проекта</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+{% endblock %}

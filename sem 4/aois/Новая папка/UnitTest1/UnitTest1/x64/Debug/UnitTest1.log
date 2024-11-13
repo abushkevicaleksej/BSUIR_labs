@@ -1,0 +1,28 @@
+﻿  Minimizaton.cpp
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(68,45): warning C4244: аргумент: преобразование "__int64" в "_Ty", возможна потеря данных
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(68,45): warning C4244:         with
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(68,45): warning C4244:         [
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(68,45): warning C4244:             _Ty=int
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(68,45): warning C4244:         ]
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(70,45): warning C4244: аргумент: преобразование "__int64" в "_Ty", возможна потеря данных
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(70,45): warning C4244:         with
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(70,45): warning C4244:         [
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(70,45): warning C4244:             _Ty=int
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(70,45): warning C4244:         ]
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(223,32): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(283,30): warning C4267: аргумент: преобразование из "size_t" в "_Ty"; возможна потеря данных
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(283,30): warning C4267:         with
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(283,30): warning C4267:         [
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(283,30): warning C4267:             _Ty=int
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(283,30): warning C4267:         ]
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(337,30): warning C4267: аргумент: преобразование из "size_t" в "_Ty"; возможна потеря данных
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(337,30): warning C4267:         with
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(337,30): warning C4267:         [
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(337,30): warning C4267:             _Ty=int
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(337,30): warning C4267:         ]
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(564,9): error C2374: stage: переопределение; множественная инициализация
+  E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(563,9):
+   см. объявление "stage"
+  
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(907,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\STUDYING\aois\Новая папка\UnitTest1\UnitTest1\Minimizaton.cpp(997,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных

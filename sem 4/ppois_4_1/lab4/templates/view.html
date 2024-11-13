@@ -1,0 +1,20 @@
+{% extends 'base.html' %} 
+{% block head %}
+{% endblock %}
+{% block body %}
+	<form method="post">
+		<select name="select-box" onchange="this.form.submit()">
+			{% for option in options %}
+			<option value="{{ option }}" {% if option == selected_option %} selected {% endif %}>{{ option }}</option>
+			{% endfor %}
+		</select>
+
+		<div id="data-display">
+			<p>
+			{% for para in data %}
+			{{ para }} <br>
+			{% endfor %}
+			</p>
+		</div>
+	</form>
+{% endblock %}

@@ -1,0 +1,36 @@
+﻿  mian.cpp
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(1,4): error C2014: команда препроцессора не должна начинаться с пробела
+E:\Visual Studio\VC\Tools\MSVC\14.39.33519\include\sal.h(2361,1): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+  (компиляция исходного файла "mian.cpp")
+  
+E:\Visual Studio\VC\Tools\MSVC\14.39.33519\include\sal.h(2361,8): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "mian.cpp")
+  
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(74,3): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(88,17): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(219,2): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(224,30): error C2664: "double modf(double,double *)": невозможно преобразовать аргумент 2 из "float *" в "double *"
+  E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(224,43):
+  Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(529,44):
+   см. объявление "modf"
+  E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(224,30):
+  при попытке сопоставить список аргументов "(float, float *)"
+  
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(224,28): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(225,56): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(236,21): warning C4244: -=: преобразование "double" в "float", возможна потеря данных
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(354,2): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(354,11): warning C4804: <<: небезопасное использование типа "bool" в операции
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(356,2): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(361,2): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(362,2): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(366,2): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(367,2): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(368,2): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(376,2): error C2065: cin: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(384,3): error C2065: cin: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(388,3): error C2065: cin: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(408,3): error C2065: cin: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(412,3): error C2065: cout: необъявленный идентификатор
+E:\STUDYING\aois\lab1\Project1\Project1\mian.cpp(414,3): error C2065: cout: необъявленный идентификатор

@@ -1,0 +1,9 @@
+﻿  UnitTest1.cpp
+E:\STUDYING\aois\Project1\UnitTest1\UnitTest1.cpp(15,21): warning C4101: calc: неиспользованная локальная переменная
+  (компиляция исходного файла "/UnitTest1.cpp")
+  
+     Создается библиотека E:\STUDYING\aois\Project1\x64\Debug\UnitTest1.lib и объект E:\STUDYING\aois\Project1\x64\Debug\UnitTest1.exp
+UnitTest1.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl BinaryNumber::GetValue(void)" (?GetValue@BinaryNumber@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) в функции "public: void __cdecl UnitTest1::UnitTest1::TestMethod1(void)" (?TestMethod1@UnitTest1@1@QEAAXXZ).
+UnitTest1.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl binaryToDecimal(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?binaryToDecimal@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) в функции "public: void __cdecl UnitTest1::UnitTest1::TestMethod1(void)" (?TestMethod1@UnitTest1@1@QEAAXXZ).
+UnitTest1.obj : error LNK2019: ссылка на неразрешенный внешний символ "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl intToBinary(int)" (?intToBinary@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z) в функции "public: void __cdecl UnitTest1::UnitTest1::TestMethod1(void)" (?TestMethod1@UnitTest1@1@QEAAXXZ).
+E:\STUDYING\aois\Project1\x64\Debug\UnitTest1.dll : fatal error LNK1120: неразрешенных внешних элементов: 3

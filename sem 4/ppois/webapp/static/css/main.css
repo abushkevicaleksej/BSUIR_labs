@@ -1,0 +1,13 @@
+.btn-spacing {
+    margin-bottom: 10px;
+}
+
+.btn-width {
+    width: 500px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

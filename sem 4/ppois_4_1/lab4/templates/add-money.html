@@ -1,0 +1,43 @@
+{% extends 'base.html' %} 
+{% block head %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}
+{% block body %}
+	<form method="POST" id="add-money-form">
+		<table>
+		<thead>
+		<tr>
+				<th>Name</th>
+				<th>Money</th>
+		</tr>
+		</thead>
+		<tbody>
+			{% for row in table_data %}
+			<tr data-id="{{ row.name }}">
+				<td>{{ row.name }}</td>
+				<td>{{ row.money }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+		<input type="text" name="input-money" placeholder="100" form="add-money-form" pattern=[0-9]+.?[0-9]* title="Enter a numeric value" required autocomplete="off">
+		<button type="submit"><b>Add money</b></button>
+		<input type="hidden" id="selected_id" name="selected_id" form="add-money-form">
+	</form>
+	<script>
+		$(document).ready(function() {
+			$('table tbody tr').click(function() {
+				$('table tbody tr').removeClass('selected');
+				$(this).addClass('selected');
+				$('#selected_id').val($(this).data('id'));
+				<!-- alert($('#selected_id').val()); -->
+			});
+		});
+	</script>
+	{% if error %}
+<p style="color: red;">{{ error }}</p>
+	{% endif %}
+	{% if success %}
+<p style="color: green;">{{ success }}</p>
+	{% endif %}
+{% endblock %}

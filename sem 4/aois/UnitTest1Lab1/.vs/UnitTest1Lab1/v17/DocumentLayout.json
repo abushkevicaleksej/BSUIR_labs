@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\STUDYING\\aois\\UnitTest1Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA495FA-98E8-4807-B8B7-D44441919828}|UnitTest1Lab1\\UnitTest1Lab1.vcxproj|E:\\STUDYING\\aois\\Project1\\Project1\\FloatNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA495FA-98E8-4807-B8B7-D44441919828}|UnitTest1Lab1\\UnitTest1Lab1.vcxproj|E:\\STUDYING\\aois\\Project1\\Project1\\FloatNumber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA495FA-98E8-4807-B8B7-D44441919828}|UnitTest1Lab1\\UnitTest1Lab1.vcxproj|E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\UnitTest1Lab1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6CA495FA-98E8-4807-B8B7-D44441919828}|UnitTest1Lab1\\UnitTest1Lab1.vcxproj|solutionrelative:UnitTest1Lab1\\UnitTest1Lab1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\FloatNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UnitTest1Lab1\\FloatNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA495FA-98E8-4807-B8B7-D44441919828}|UnitTest1Lab1\\UnitTest1Lab1.vcxproj|E:\\STUDYING\\aois\\Project1\\Project1\\BinaryCalculator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA495FA-98E8-4807-B8B7-D44441919828}|UnitTest1Lab1\\UnitTest1Lab1.vcxproj|E:\\STUDYING\\aois\\Project1\\Project1\\BinaryNumber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\BinaryCalculator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UnitTest1Lab1\\BinaryCalculator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\BinaryNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UnitTest1Lab1\\BinaryNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FloatNumber.h",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\Project1\\Project1\\FloatNumber.h",
+              "RelativeDocumentMoniker": "..\\Project1\\Project1\\FloatNumber.h",
+              "ToolTip": "E:\\STUDYING\\aois\\Project1\\Project1\\FloatNumber.h",
+              "RelativeToolTip": "..\\Project1\\Project1\\FloatNumber.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-01T22:44:47.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BinaryNumber.cpp",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\Project1\\Project1\\BinaryNumber.cpp",
+              "RelativeDocumentMoniker": "..\\Project1\\Project1\\BinaryNumber.cpp",
+              "ToolTip": "E:\\STUDYING\\aois\\Project1\\Project1\\BinaryNumber.cpp",
+              "RelativeToolTip": "..\\Project1\\Project1\\BinaryNumber.cpp",
+              "ViewState": "AQIAALUAAAAAAAAAAAAQwMcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-01T19:13:20.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BinaryCalculator.cpp",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\Project1\\Project1\\BinaryCalculator.cpp",
+              "RelativeDocumentMoniker": "..\\Project1\\Project1\\BinaryCalculator.cpp",
+              "ToolTip": "E:\\STUDYING\\aois\\Project1\\Project1\\BinaryCalculator.cpp",
+              "RelativeToolTip": "..\\Project1\\Project1\\BinaryCalculator.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-01T18:34:23.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FloatNumber.cpp",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\Project1\\Project1\\FloatNumber.cpp",
+              "RelativeDocumentMoniker": "..\\Project1\\Project1\\FloatNumber.cpp",
+              "ToolTip": "E:\\STUDYING\\aois\\Project1\\Project1\\FloatNumber.cpp",
+              "RelativeToolTip": "..\\Project1\\Project1\\FloatNumber.cpp",
+              "ViewState": "AQIAAOMAAAAAAAAAAAAowOgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-01T18:33:51.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FloatNumber.h",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\FloatNumber.h",
+              "RelativeDocumentMoniker": "UnitTest1Lab1\\FloatNumber.h",
+              "ToolTip": "E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\FloatNumber.h",
+              "RelativeToolTip": "UnitTest1Lab1\\FloatNumber.h",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-01T18:33:37.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BinaryCalculator.h",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\BinaryCalculator.h",
+              "RelativeDocumentMoniker": "UnitTest1Lab1\\BinaryCalculator.h",
+              "ToolTip": "E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\BinaryCalculator.h",
+              "RelativeToolTip": "UnitTest1Lab1\\BinaryCalculator.h",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-01T18:33:33.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BinaryNumber.h",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\BinaryNumber.h",
+              "RelativeDocumentMoniker": "UnitTest1Lab1\\BinaryNumber.h",
+              "ToolTip": "E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\BinaryNumber.h",
+              "RelativeToolTip": "UnitTest1Lab1\\BinaryNumber.h",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-01T18:33:31.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1Lab1.cpp",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\UnitTest1Lab1.cpp",
+              "RelativeDocumentMoniker": "UnitTest1Lab1\\UnitTest1Lab1.cpp",
+              "ToolTip": "E:\\STUDYING\\aois\\UnitTest1Lab1\\UnitTest1Lab1\\UnitTest1Lab1.cpp",
+              "RelativeToolTip": "UnitTest1Lab1\\UnitTest1Lab1.cpp",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAQwKoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-01T18:21:28.088Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

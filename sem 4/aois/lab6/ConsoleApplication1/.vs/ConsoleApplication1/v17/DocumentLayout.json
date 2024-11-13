@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95CC4E4B-D4A2-43EA-9E68-66A28C6A5E20}|ConsoleApplication1\\ConsoleApplication1.vcxproj|E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\HashTable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95CC4E4B-D4A2-43EA-9E68-66A28C6A5E20}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\HashTable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95CC4E4B-D4A2-43EA-9E68-66A28C6A5E20}|ConsoleApplication1\\ConsoleApplication1.vcxproj|E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95CC4E4B-D4A2-43EA-9E68-66A28C6A5E20}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95CC4E4B-D4A2-43EA-9E68-66A28C6A5E20}|ConsoleApplication1\\ConsoleApplication1.vcxproj|E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\HashTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95CC4E4B-D4A2-43EA-9E68-66A28C6A5E20}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\HashTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Node.h",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\Node.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Node.h",
+              "ToolTip": "E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\Node.h",
+              "RelativeToolTip": "ConsoleApplication1\\Node.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-15T09:59:51.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HashTable.h",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\HashTable.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\HashTable.h",
+              "ToolTip": "E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\HashTable.h",
+              "RelativeToolTip": "ConsoleApplication1\\HashTable.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-15T09:59:34.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HashTable.cpp",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\HashTable.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\HashTable.cpp",
+              "ToolTip": "E:\\STUDYING\\aois\\lab6\\ConsoleApplication1\\ConsoleApplication1\\HashTable.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\HashTable.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-30T09:17:02.202Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

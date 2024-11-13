@@ -1,0 +1,2 @@
+class FinishedParsing(Exception):
+    pass

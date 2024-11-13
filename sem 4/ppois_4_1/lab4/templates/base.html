@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA_Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+	<style>
+		a {
+			text-decoration: none;
+		}
+	</style>
+	{% block head %}{% endblock %}
+</head>
+
+<body>
+	<p>
+	<h1>Pizzeria</h1>
+	<a href="/view">
+		<button>View info</button>
+	</a>
+	<a href="/add">
+		<button>Add client</button>
+	</a>
+	<a href="/add-money">
+		<button>Add client money</button>
+	</a>
+	<a href="/hire">
+		<button>Hire</button>
+	</a>
+	<a href="/buy">
+		<button>Buy pizza</button>
+	</a>
+	</p>
+	<p>
+	<form method="POST" action="{{ url_for('reset') }}">
+		<button type="submit">Reset</button>
+	</form>
+	</p>
+	<script>
+		document.querySelector('form').addEventListenter('submit', function () {
+			location.reload();
+		});
+	</script>
+
+	{% block body %}
+	{% endblock %}
+</body>
+
+</html>

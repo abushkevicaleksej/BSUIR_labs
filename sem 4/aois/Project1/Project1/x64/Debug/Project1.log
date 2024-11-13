@@ -1,0 +1,5 @@
+﻿  test.cpp
+E:\STUDYING\aois\Project1\Project1\FloatNumber.h(146,20): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "test.cpp")
+  
+  Project1.vcxproj -> E:\STUDYING\aois\Project1\x64\Debug\Project1.exe

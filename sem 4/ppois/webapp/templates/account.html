@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Личный кабинет {{ client.get_name() }}
+
+{% block body %}
+<div class="container mt-4">
+        <div class="container">
+
+            <div class="button-container">
+            <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#addClientModal">
+                Сделать заказ
+            </button>
+        </div>
+
+        <div class="button-container">
+            <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#addClientModal">
+                Мои заказы
+            </button>
+        </div>
+            <div class="modal fade" id="showUncomplOrderModal" tabindex="-1" aria-labelledby="showUncomplOrderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="showUncomplOrderModalLabel">Мои заказы</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     <input type="hidden" name="company_name" value="{{ company_name }}">
+                </div>
+                <div class="modal-body">
+                    <h6>Все заказы:</h6>
+                    <ul>
+                        {% for order in company.get_orders() %}
+                            <li>{{ order.get_name() }}</li>
+                        {% endfor %}
+                    </ul>
+                    <h6>Незавершенные заказы:</h6>
+                    <ul>
+                        {% for order in company.get_uncompleted_orders() %}
+                            <li>{{ order.get_name() }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button type="button" class="btn btn-danger btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#deleteCompanyModal">
+            Удалить заказ
+        </button>
+</div>
+{% endblock %}

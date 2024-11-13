@@ -1,0 +1,10 @@
+{
+    "screen_width": 800,
+    "screen_height": 600,
+    "fps": 100,
+    "user_tick": 30,
+    "init_time": 0,
+    "big_chick_timer": 0,
+    "ammo_count": -1,
+    "max_records": 5
+}

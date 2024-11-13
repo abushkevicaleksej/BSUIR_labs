@@ -1,0 +1,25 @@
+﻿  TruthTableImplementation.cpp
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(84,45): warning C4244: аргумент: преобразование "__int64" в "_Ty", возможна потеря данных
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(84,45): warning C4244:         with
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(84,45): warning C4244:         [
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(84,45): warning C4244:             _Ty=int
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(84,45): warning C4244:         ]
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(86,45): warning C4244: аргумент: преобразование "__int64" в "_Ty", возможна потеря данных
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(86,45): warning C4244:         with
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(86,45): warning C4244:         [
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(86,45): warning C4244:             _Ty=int
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(86,45): warning C4244:         ]
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(239,32): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(299,30): warning C4267: аргумент: преобразование из "size_t" в "_Ty"; возможна потеря данных
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(299,30): warning C4267:         with
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(299,30): warning C4267:         [
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(299,30): warning C4267:             _Ty=int
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(299,30): warning C4267:         ]
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(353,30): warning C4267: аргумент: преобразование из "size_t" в "_Ty"; возможна потеря данных
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(353,30): warning C4267:         with
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(353,30): warning C4267:         [
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(353,30): warning C4267:             _Ty=int
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(353,30): warning C4267:         ]
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(1005,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\STUDYING\aois\lab2\Project2\Project2\TruthTableImplementation.cpp(1095,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Project2.vcxproj -> E:\STUDYING\aois\lab2\Project2\x64\Debug\Project2.exe

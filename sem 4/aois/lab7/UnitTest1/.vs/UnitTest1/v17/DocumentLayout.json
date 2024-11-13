@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\STUDYING\\aois\\lab7\\UnitTest1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{186C1B0D-206A-4F60-A943-9E3DFFCD8F7B}|UnitTest1\\UnitTest1.vcxproj|E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186C1B0D-206A-4F60-A943-9E3DFFCD8F7B}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186C1B0D-206A-4F60-A943-9E3DFFCD8F7B}|UnitTest1\\UnitTest1.vcxproj|E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\ConstMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186C1B0D-206A-4F60-A943-9E3DFFCD8F7B}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\ConstMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186C1B0D-206A-4F60-A943-9E3DFFCD8F7B}|UnitTest1\\UnitTest1.vcxproj|E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\ConstMatrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{186C1B0D-206A-4F60-A943-9E3DFFCD8F7B}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\ConstMatrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConstMatrix.cpp",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\ConstMatrix.cpp",
+              "RelativeDocumentMoniker": "UnitTest1\\ConstMatrix.cpp",
+              "ToolTip": "E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\ConstMatrix.cpp",
+              "RelativeToolTip": "UnitTest1\\ConstMatrix.cpp",
+              "ViewState": "AQIAALgAAAAAAAAAAAD4v68AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-17T18:56:07.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConstMatrix.h",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\ConstMatrix.h",
+              "RelativeDocumentMoniker": "UnitTest1\\ConstMatrix.h",
+              "ToolTip": "E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\ConstMatrix.h",
+              "RelativeToolTip": "UnitTest1\\ConstMatrix.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-17T18:55:54.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cpp",
+              "DocumentMoniker": "E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\UnitTest1.cpp",
+              "RelativeDocumentMoniker": "UnitTest1\\UnitTest1.cpp",
+              "ToolTip": "E:\\STUDYING\\aois\\lab7\\UnitTest1\\UnitTest1\\UnitTest1.cpp",
+              "RelativeToolTip": "UnitTest1\\UnitTest1.cpp",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowEwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-17T18:55:18.116Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

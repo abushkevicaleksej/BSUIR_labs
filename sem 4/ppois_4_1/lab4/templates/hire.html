@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% block head %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}
+{% block body %}
+	<form method="POST" id="hire-form">
+	<p>Select what worker you want to hire</p>
+	{% for option in options %}
+	<input type="radio" id={{ option }} name="worker_type" value={{ option }} {% if option == selected_option %} checked {% endif %}>
+		<label for={{ option }}> {{ option }}</label><br>
+	{% endfor %}
+	<p>Input the name: </p>
+		<input type="text" name="worker-name" placeholder="Bob" form="hire-form" pattern=[A-Z][A-Za-z]* title="Enter the worker name that starts with a capitabl letter" required autocomplete="off">
+		<button type="submit"><b>Hire worker</b></button>
+		</form>
+	{% if error %}
+<p style="color: red;">{{ error }}</p>
+	{% endif %}
+	{% if success %}
+<p style="color: green;">{{ success }}</p>
+	{% endif %}
+{% endblock %}

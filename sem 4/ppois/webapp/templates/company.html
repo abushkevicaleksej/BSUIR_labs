@@ -1,0 +1,286 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Управление компанией
+{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>Компания: {{ company.get_name() }}</h1>
+    <p>Бюджет: {{ company.get_budget() }}</p>
+    <p>Местоположение: {{ company.get_location() }}</p>
+
+         <div class="button-container">
+    <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#updateCompanyNameModal">
+        Сменить имя компании
+    </button>
+</div>
+   <div class="modal fade" id="updateCompanyNameModal" tabindex="-1" aria-labelledby="updateCompanyNameModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateCompanyNameModalLabel">Изменить название компании</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+<form action="{{ url_for('update_company_name', company_name=company.get_name()) }}" method="post">
+    <div class="mb-3">
+        <label for="new_name" class="form-label">Новое название компании:</label>
+        <input type="text" id="new_name" name="new_name" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Обновить имя</button>
+</form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+          <div class="button-container">
+    <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+        Добавить сотрудника
+    </button>
+</div>
+
+<div class="modal fade" id="addEmployeeModal" tabindex="-1" aria-labelledby="addEmployeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addEmployeeModalLabel">Добавить нового сотрудника</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="{{ url_for('add_employee', company_name=company.get_name()) }}" method="post">
+                    <div class="mb-3">
+                        <label for="employee_name" class="form-label">Имя сотрудника:</label>
+                        <input type="text" id="employee_name" name="employee_name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="employee_age" class="form-label">Возраст сотрудника:</label>
+                        <input type="number" id="employee_age" name="employee_age" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="employee_pos" class="form-label">Должность сотрудника:</label>
+                        <select id="employee_pos" name="employee_pos" class="form-control" required>
+                            {% for pos in company.get_positions_enum() %}
+                                <option value="{{ pos.value }}">{{ pos.value }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="employee_lang" class="form-label">Языки программирования:</label>
+                        <select id="employee_lang" name="employee_lang" class="form-control" required>
+                            {% for lang in company.get_programming_languages_enum() %}
+                                <option value="{{ lang.value }}">{{ lang.value }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="employee_level" class="form-label">Уровень знаний:</label>
+                        <select id="employee_level" name="employee_level" class="form-control" required>
+                            {% for level in company.get_programmer_levels_enum() %}
+                                <option value="{{ level.value }}">{{ level.value }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="employee_work_exp" class="form-label">Опыт работы:</label>
+                        <input type="number" id="employee_work_exp" name="employee_work_exp" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="employee_salary" class="form-label">Зарплата:</label>
+                        <input type="number" id="employee_salary" name="salary" class="form-control" required>
+                    </div>
+                    <input type="hidden" id="company_name" name="company_name" value="{{ company.get_name() }}">
+                    <button type="submit" class="btn btn-primary">Добавить сотрудника</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <div class="button-container">
+    <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#addProjectModal">
+        Добавить проект
+    </button>
+</div>
+<div class="modal fade" id="addProjectModal" tabindex="-1" aria-labelledby="addProjectModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addProjectModalLabel">Добавить новый проект</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="projectForm" action="{{ url_for('add_project', company_name=company.get_name()) }}" method="post" class="mb-3" onsubmit="return validateForm()">
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="project_name" class="form-label">Название проекта:</label>
+                <input type="text" id="project_name" name="project_name" class="form-control" value="{{ request.form['project_name'] if 'project_name' in request.form else '' }}" required>
+            </div>
+            <div class="mb-3">
+                <label for="project_budget" class="form-label">Бюджет проекта:</label>
+                <input type="number" id="project_budget" name="project_budget" class="form-control" value="{{ request.form['project_budget'] if 'project_budget' in request.form else '' }}" required>
+                <div id="budgetError" class="text-danger" style="display: none;">Бюджет проекта не может быть отрицательным.</div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Добавить проект</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+ <div class="button-container">
+        <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#manageProjectModal">
+            Управлять проектом
+        </button>
+    </div>
+    <div class="modal fade" id="manageProjectModal" tabindex="-1" aria-labelledby="manageProjectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="manageProjectModalLabel">Выберите проект для управления</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/manage_project" method="post">
+                    <input type="hidden" id="companyName" name="company_name" value="{{ company.get_name() }}">
+                    <div class="mb-3">
+                        <label for="projectName" class="form-label">Выберите проект:</label>
+                        <select id="projectName" name="project_name" class="form-select" required>
+                            {% for project in company.get_projects() %}
+                                <option value="{{ project.get_proj_name() }}">{{ project.get_proj_name() }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Управлять</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+      <div class="button-container">
+        <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#showCompanyInfoModal">
+            Просмотреть информацию о компании
+        </button>
+    </div>
+<div class="modal fade" id="showCompanyInfoModal" tabindex="-1" aria-labelledby="showCompanyInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="showCompanyInfoModalLabel">Информация о компании</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Название компании: {{ company.get_name() }}</h6>
+        <p>Бюджет: {{ company.get_budget() }}</p>
+        <p>Локация: {{ company.get_location() }}</p>
+        <h6>Сотрудники:</h6>
+        <ul>
+          {% for employee in company.get_employees() %}
+            <li>{{ employee.get_info() }}</li>
+          {% endfor %}
+        </ul>
+        <h6>Проекты:</h6>
+        <ul>
+          {% for project in company.get_projects() %}
+            <li>{{ project.get_info() }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="button-container">
+        <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#showEmpInfoModal">
+            Посмотреть штат сотрудников
+        </button>
+    </div>
+<div class="modal fade" id="showEmpInfoModal" tabindex="-1" aria-labelledby="showEmpInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="showEmpInfoModalLabel">Информация о сотрудниках</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Сотрудники:</h6>
+        <ul>
+          {% for employee in company.get_employees() %}
+            <li>{{ employee.get_info() }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="button-container">
+        <button type="button" class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#showCustInfoModal">
+            Посмотреть список клиентов
+        </button>
+    </div>
+<div class="modal fade" id="showCustInfoModal" tabindex="-1" aria-labelledby="showCustInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="showCustInfoModalLabel">Информация о клиентах</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Клиенты:</h6>
+        <ul>
+          {% for client in company.get_client_manager().get_clients() %}
+            <li>{{ client.get_name() }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="button-container">
+        <button type="button"  class="btn btn-primary btn-spacing btn-width" data-bs-toggle="modal" data-bs-target="#delEmpModal">
+            Удалить сотрудника
+        </button>
+    </div>
+    <div class="modal fade" id="delEmpModal" tabindex="-1" aria-labelledby="delEmpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="delEmpModalLabel">Удаление сотрудника</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Выберите сотрудника для удаления:</h6>
+        <form id="deleteEmployeeForm" action="/delete_employee/{{ company.get_name() }}" method="post">
+          <div class="mb-3">
+            <label for="employeeName" class="form-label">Имя сотрудника:</label>
+            <select id="employeeName" name="employee_name" class="form-select" required>
+              {% for employee in company.get_employees() %}
+                <option value="{{ employee.get_name() }}">{{ employee.get_name() }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <button type="submit" class="btn btn-danger">Удалить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

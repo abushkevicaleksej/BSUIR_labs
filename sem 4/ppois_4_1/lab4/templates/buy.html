@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% block head %}
+<style>
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.form-container,
+	.table-container {
+		flex: 1;
+		margin: 10px;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}
+{% block body %}
+<div class="container">
+	<div class="form-container">
+		<form method="POST" id="buy-form" action="{{ url_for('buy') }}">
+			Select buy type
+			<br>
+			<select name="buy-type" onchange="this.form.submit()">
+				{% for option in buy_options %}
+				<option value="{{ option }}" {% if option==selected_buy %} selected {% endif %}>{{ option }}</option>
+				{% endfor %}
+			</select>
+			{% if not is_avail %}<p style="color: red;">This buy type is not available right now</p> {% endif %}
+			<table id="ingredients-table">
+				<thead>
+					<tr>
+						<th>Ingredients</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% if ingredients %}
+					{% for ingredient in ingredients %}
+					<tr>
+						<td>{{ ingredient }}</td>
+						<td><button type="button" class="remove-ingredient">Remove</button></td>
+						<input type="hidden" name="ingredients[]" value="{{ ingredient }}">
+					</tr>
+					{% endfor %}
+					{% endif %}
+				</tbody>
+			</table>
+			<p>
+			<p>Input ingredient: </p>
+			<input type="text" id="new-ingredient" placeholder="Lettuce" title="Enter a single ingredient name"
+				autocomplete="off">
+			<button type="button" id="add-ingredient" for="new-ingredient"><b>Add</b></button>
+			<p>Dough: </p>
+			<select name="thickness-type">
+				{% for option in thickness_options %}
+				<option value="{{ option }}" {% if option==selected_thickness %} selected {% endif %}>{{ option }}</option>
+				{% endfor %}
+			</select>
+			<select name="size-type"">
+				{% for option in size_options %}
+				<option value="{{ option }}" {% if option==selected_size %} selected {% endif %}>{{ option }}</option>
+				{% endfor %}
+			</select>
+			</p>
+			<br>
+			<p id="price">The price {{ price }}</p>
+			<button name="buy_button" value="buy_button" type="submit"><b>Buy</b></button>
+		</form>
+		{% if error %}
+		<p style="color: red;">{{ error }}</p>
+		{% endif %}
+		{% if success %}
+		<p style="color: green;">{{ success }}</p>
+		{% endif %}
+	</div>
+	<div class="table-container">
+		<table id="client-data-table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Money</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for row in client_data %}
+				<tr data-id="{{ row.name }}">
+					<td>{{ row.name }}</td>
+					<td>{{ row.money }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<input type="hidden" id="selected_id" name="selected_id" form="buy-form">
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+
+		function updatePrice() {
+			$.ajax({
+				url: '/update_price',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					buy_type: $('[name="buy-type"]').val(),
+					ingredients: $('#ingredients-table tbody tr').map(function () {return $(this).find('td:first').text();}).get(),
+					thickness_type: $('[name="thickness-type"]').val(),
+					size_type: $('[name="size-type"]').val()
+				}),
+				success: function (data) {
+					$('#price').text('The price ' + data.price);
+				},
+				error: function (xhr, status, error) {
+					console.error("Error updating price: ", error)
+				}
+			});
+		}
+
+		$('#client-data-table tbody tr').click(function () {
+			$('#client-data-table tbody tr').removeClass('selected');
+			$(this).addClass('selected');
+			$('#selected_id').val($(this).data('id'));
+			<!-- alert($('#selected_id').val()); -->
+		});
+
+		$('#add-ingredient').click(function (event) {
+			event.preventDefault();
+
+			const newIngredient = $('#new-ingredient');
+			const pattern = new RegExp("^[A-Za-z]+$");
+
+			if (pattern.test(newIngredient.val())) {
+				const newRow = `
+                <tr>
+                    <td>${newIngredient.val()}</td>
+                    <td><button type="button" class="remove-ingredient">Remove</button></td>
+                    <input type="hidden" name="ingredients[]" value="${newIngredient.val()}">
+                </tr>
+            `;
+				$('#ingredients-table tbody').append(newRow);
+				newIngredient.val('');
+				updatePrice();
+			} else {
+				alert('Please enter a valid ingredient name(only letters).');
+			}
+		});
+		$(document).on('click', '.remove-ingredient', function () {
+			$(this).closest('tr').remove();
+			updatePrice();
+		});
+
+		$('#new-ingredient').keypress(function (event) {
+			if (event.key == 'Enter') {
+				event.preventDefault();
+				$('#add-ingredient').click()
+			}
+		});
+
+		$('[name="buy-type"], [name="thickness-type"], [name="size-type"]').change(function () {
+			updatePrice();
+		});
+	});
+</script>
+{% endblock %}

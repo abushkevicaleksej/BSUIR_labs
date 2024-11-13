@@ -1,0 +1,6 @@
+﻿  HashTable.cpp
+E:\STUDYING\aois\lab6\ConsoleApplication1\ConsoleApplication1\HashTable.cpp(6,22): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+E:\STUDYING\aois\lab6\ConsoleApplication1\ConsoleApplication1\HashTable.cpp(179,40): warning C4566: символ, представленный универсальным именем символа "\u00B2", невозможно представить в текущей кодовой странице (1251)
+E:\STUDYING\aois\lab6\ConsoleApplication1\ConsoleApplication1\HashTable.cpp(179,40): warning C4566: символ, представленный универсальным именем символа "\u2212", невозможно представить в текущей кодовой странице (1251)
+E:\STUDYING\aois\lab6\ConsoleApplication1\ConsoleApplication1\HashTable.cpp(162,9): warning C4101: choice: неиспользованная локальная переменная
+  ConsoleApplication1.vcxproj -> E:\STUDYING\aois\lab6\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

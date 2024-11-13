@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>Добавить новую IT-компанию</h1>
+    <form action="{{ url_for('add_company') }}" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Название компании:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="initial_budget" class="form-label">Начальный бюджет:</label>
+            <input type="text" id="initial_budget" name="initial_budget" class="form-control" required>
+            {% if error_initial_budget %}
+            <div class="text-danger">{{ error_initial_budget }}</div>
+            {% endif %}
+        </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Местоположение:</label>
+            <input type="text" id="location" name="location" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить компанию</button>
+    </form>
+</div>
+{% endblock %}
+

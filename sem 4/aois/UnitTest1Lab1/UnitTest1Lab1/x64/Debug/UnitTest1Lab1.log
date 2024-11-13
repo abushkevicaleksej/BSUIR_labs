@@ -1,0 +1,23 @@
+﻿  UnitTest1Lab1.cpp
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(16,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(23,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(30,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(37,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(44,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(51,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(59,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(67,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(75,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(83,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(91,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(99,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(107,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(115,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(123,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(131,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(139,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(147,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(155,21): warning C4101: calc: неиспользованная локальная переменная
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(164,20): warning C4305: инициализация: усечение из "double" в "float"
+E:\STUDYING\aois\UnitTest1Lab1\UnitTest1Lab1\UnitTest1Lab1.cpp(164,37): warning C4305: инициализация: усечение из "double" в "float"
+  UnitTest1Lab1.vcxproj -> E:\STUDYING\aois\UnitTest1Lab1\x64\Debug\UnitTest1Lab1.dll
